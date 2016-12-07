@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simula UC</title>
+    <meta name="keywords" content="Simula UC, Simulación, Optimización" />
+    <meta name="description" content="Simula UC - Simulación y Optimización de Procesos">
+    <meta name="author" content="Simula UC">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i%7CPoppins:300,400,500,600" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/reset.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/ion-icons/ionicons.min.css">
+    <link rel="stylesheet" href="vendor/owl-slider/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/slideshow/slideshow.css">
+    <link rel="stylesheet" href="vendor/lightbox/lity.min.css">
+    <!-- Theme CSS -->
+    <link id="theme" rel="stylesheet" href="css/theme4.css">
+    <script src="vendor/modernizr.js"></script>
+    <script src="js/jquery.particleground.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          particleground(document.getElementById('neutral'), {
+            dotColor: '#418fdf',
+            lineColor: '#418fdf'
+          });
+          var intro = document.getElementById('intro');
+          intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
+        }, false);
+    </script>
+    <style>
+        h1{
+            font-weight: 400;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Scroll up -->
+    <div class="scrollup">
+        <i class="ion-ios-arrow-up"></i>
+    </div>
+
+    <!-- Main Container -->
+    <div class="web-in">
+        <!-- Search Modal -->
+        <div id="search-modal">
+            <img src="img/exit.svg" class="exit" alt="">
+            <form class="search-form" action="post">
+                <label>What are you looking for?</label>
+                <input type="text" placeholder="Your search term here...">
+                <span>Press <b class="primary">enter</b> to confirm search term</span>
+            </form>
+        </div>
+
+        <!-- Start Project Modal -->
+        <div id="modal-bg">
+            <img src="img/exit.svg" class="exit" alt="">
+            <div class="holder">
+                <div class="placer">
+                    <div id="modal" class="center">  
+                    <div class="title">                            
+                            <span class="promo-heading">Complete el siguiente formulario</span>
+                            
+                        </div>                      
+                        <div class="row">
+                            <div class="col-sm-12 w-section mh">
+                               <form class="contact-form" method="post" action="contact.php" novalidate="true">
+                            <div class="input-field col-sm-12">
+                                <div class="form-group">
+                                    <input id="form-name" name="name" type="text" placeholder="Nombre *" required="required" data-error="Nombre es obligatorio.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="input-field col-sm-6">
+                                <div class="form-group">
+                                    <input id="form-email" name="email" type="email" placeholder="Email *" required="required" data-error="El email es requerido.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="input-field col-sm-6">
+                                <div class="form-group">
+                                    <input id="form-tel" name="tel" type="tel" placeholder="Teléfono" data-error="Por favor, ingrese un número real.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="input-field col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="form-textarea" name="Message" cols="30" rows="5" placeholder="Mensaje *" required="required" data-error="el mensaje es requerido."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 center">
+                                <input type="submit" value="Enviar Mensaje" class="disabled">
+                                <div class="messages"></div>
+                            </div>
+                        </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav id="light" class="transparent start-light regular">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="nav-ui n_">
+                            <div>
+                                <a href="hp-onepage.html#" class="btn hidden-xs start-project"><span>Contacto</span></a>                                
+                                <div id="menu-icon"><span></span></div>
+                            </div>
+                        </div>
+                        <div class="logo-holder n_">
+                            <div>
+                                <a href="index.html">
+                                    <img class="logo" src="img/logo-light.svg" alt="">
+                                    <img class="logo alt" src="img/logo-dark.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-content n_">
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Quienes somos</a></li>
+                                <li><a href="#proyectos">Proyectos</a>
+                                    <!-- <ul class="dropdown mob-show-1">
+                                        <li class="nav-col parent">
+                                            <ul>
+                                                <li class="sub-nav-header parent">
+                                                    <ul>
+                                                        <li><a href="#"></a></li>
+                                                        <li><a href="#"></a></li>
+                                                        <li><a href="#"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li><a href="#">Rubros</a>
+                                      <ul class="dropdown mob-show-1">
+                                        <li class="nav-col parent">
+                                            <ul>
+                                                <li class="sub-nav-header parent">
+                                                    <ul>
+                                                        <li><a href="#">Rubro 1</a></li>
+                                                        <li><a href="#">Rubro 1</a></li>
+                                                        <li><a href="#">Rubro 1</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                   
+                                </li>
+                                <li><a href="blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- <header id="neutral" class="dark1 center" style="background-image:url('img/onepage/header.jpg');" data-overlay="8"> -->
+        <header id="neutral" class="dark1 center" data-overlay="8">
+            <div class="header-in" id="intro">
+                <div class="caption">
+                    <h1>Simula UC</h1>
+                    <!-- <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>  -->                   
+                    <h6>
+                        Generamos cambio tecnológico en la gestión de las <br> 
+                        empresas mediante la implementación de soluciones <br>
+                        basadas en modelos de simulación y optimización.
+                    </h6>
+                </div>
+                <img class="arrow" src="img/arrow.svg" alt="">
+            </div>
+        </header>
+         <!--Servicios -->
+        <section class="iconblock center">
+            <div class="container border">
+                <div class="row">
+                    <div class="col col-md-6 col-md-offset-3 title">
+                        <h2>Servicios</h2>
+                        <h4>En Simula UC bla bla<h4>
+                    </div>
+                </div>
+                <div class="row m-space">
+                    <div class="col-sm-4">
+                        <i class="ion-ios-analytics"></i>
+                        <h3>Desarrollo de Herramientas de Optimización</h3>
+                        <p class="text-justify">Desarrollamos herramientas de optimización que se insertan en el proceso de toma de decisiones del cliente,
+                         unificando criterios, automatizando procesos y optimizando la operación.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <i class="ion-ios-pulse"></i>
+                        <h3>Diagnóstico e Indentificación de Valor</h3>
+                        <p class="text-justify">Realizamos un profundo diagnóstico de la cadena logístico-operacional del cliente, 
+                        identificando oportunidades de mejora en su operación y valorizando el impacto económico de estas medidas.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <i class="ion-ios-stopwatch-outline"></i>
+                        <h3>Simulación y Optimización de Procesos</h3>
+                        <p class="text-justify">
+                            Desarrollamos modelos de simulación y optimización de operaciones logísticas y productivas. Mediante el análisis del modelo, optimizamos recursos, identificamos mejores políticas de operación y estudiamos inversiones en infraestructura que faciliten el cumplimiento de las metas propuestas por el cliente.
+                        </p>
+                        <!-- <p>Desarrollamos modelos de simulación de operaciones logísticas, capturando la variabilidad e incertidumbre propia de su operación. Mediante el análisis del modelo, optimizamos recursos, identificamos mejores políticas de operación y estudiamos inversiones en infraestructura que permitirán cumplir con los objetivos definidos por el cliente. -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <!--Empresas -->
+        <section class="iconblock center ">
+            <div class="container border">
+                <div class="row">
+                    <div class="col col-md-6 col-md-offset-3 title">
+                        <h2>Clientes</h2>
+                        <h4>Han confiado en nosotros</h4>                        
+                    </div>
+                </div>
+                <div class="row m-space">
+                    <div class="col-sm-12 col-md-12">
+                        <img src="img/clientes-1.png" alt="" style="width: 100%;padding: 0 0 15px 0;">
+                        <img src="img/clientes-2.png" alt="" style="width: 100%;padding: 0 0 15px 0;">
+                        <img src="img/clientes-3.png" alt="" style="width: 100%;padding: 0 0 15px 0;">                                          
+                    </div>
+             
+                </div>
+            </div>
+        </section>
+         <!-- links al blog -->
+        <div class="masonry four-col no-margin"  id="proyectos">
+            <div class="grid-sizer"></div>
+            <div class="grid-item">
+                <!-- <a href="hp-onepage.html#"><img src="img/projects/300x25X-1.jpg" alt=""> -->
+                <a href="hp-onepage.html#"><img src="img/projects/transportes-ccu.png" alt="">
+                    <div class="project-info">
+                        <h5>Ver caso de estudio</h5>
+                        <h2>Transportes CCU</h2>
+                        <p>Sistema huehue</p>
+                        <ul class="tags">
+                            <li>Simulación</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!-- end of item -->
+            <div class="grid-item">
+                <!-- <a href="hp-onepage.html#"><img src="img/projects/300x25X-2.jpg" alt=""> -->
+                <a href="hp-onepage.html#"><img src="img/projects/codelco.png" alt="">
+
+                    <div class="project-info">
+                        <h5>Ver caso de estudio</h5>
+                        <h2>Coldelco</h2>
+                        <p>Herramienta de simulación</p>
+                        <ul class="tags">
+                            <li>Simulación</li>
+                            <li>Webapp</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!-- end of item -->
+            <div class="grid-item">
+                <a href="hp-onepage.html#"><img src="img/projects/sqmx2.png" alt="">
+                    <div class="project-info">
+                        <h5>Ver caso de estudio</h5>
+                        <h2>SQM</h2>
+                        <p>Simulación aeropuerto, carga, hueheu</p>
+                        <ul class="tags">
+                            <li>Simulación</li>
+                            <li>SIMIO LCC</li>                            
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!-- end of item -->
+            <div class="grid-item">
+                <!-- <a href="hp-onepage.html#"><img src="img/projects/300x500-5.jpg" alt=""> -->
+                <a href="hp-onepage.html#"><img src="img/projects/telefonica.jpg" alt="">
+                    <div class="project-info">
+                        <h5>Ver caso de estudio</h5>
+                        <h2>Telefónica Movistar</h2>
+                        <p>Simulación de sucursales de atención</p>
+                        <ul class="tags">
+                            <li>Simulación</li>
+                            <li>WebApp</li>                           
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!-- end of item -->
+            <div class="grid-item">
+                <a href="hp-onepage.html#"><img src="img/projects/tpa.png" alt="">
+                    <div class="project-info">
+                        <h5>Ver caso de estudio</h5>
+                        <h2>Terminal Puerto de Arica</h2>
+                        <p>Nombre Proyecto</p>
+                        <ul class="tags">
+                            <li>Optimización</li>
+                            <li>Simulación</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!-- end of item -->
+            <div class="grid-item">
+                <a href="hp-onepage.html#"><img src="img/projects/asfaltos-chilenos.png" alt="">
+                    <div class="project-info">
+                        <h5>Ver caso de estudio</h5>
+                        <h2>Asfaltos Chilenos</h2>
+                        <p>Nombre Proyecto</p>
+                        <ul class="tags">
+                            <li>Simulación</li>
+                            <li>Optimización</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <!-- end of item -->
+        </div>
+        <!-- Counter -->
+        <section id="c_counter" class="dark parallax-container" data-overlay="7">
+            <div class="parallax"><img src="img/promo1.jpg" alt=""></div>
+            <div class="container">
+                <div class="row m-space">
+                    <div class="col-md-3 col-xs-6">
+                        <i class="ion-ios-analytics-outline"></i>
+                        <h2>26.000</h2>
+                        <p>Simulaciones realizadas</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <i class="ion-ios-lightbulb-outline"></i>
+                        <h2>180</h2>
+                        <p>Proyectos realizados</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <i class="ion-social-usd-outline"></i>
+                        <h2>5.000</h2>
+                        <p>Billones en bla bla</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <i class="ion-ios-briefcase-outline"></i>
+                        <h2>80</h2>
+                        <p>Empresas han confiado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+        <!-- News -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 title-with-button">
+                        <a href="hp-onepage.html#" class="btn"><span>Ir al Blog</span></a>
+                        <h2>Noticias SimulaUC</h2>
+                    </div>
+                </div>
+                <div class="row m-space">
+                    <div class="col-md-4">
+                        <div class="blog-item">
+
+                            <div class="thumb1">
+                                <a href="hp-onepage.html#">
+                                    <img src="img/projects/400x250-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <span class="tag">Simulación</span>
+                                <a href="hp-onepage.html#">
+                                    <p>24.09.16</p>
+                                    <h3>Simulatron bla bla</h3>
+                                </a>
+                                <p>Proin eu fringilla magna. Aenean semper vel purus
+                                    eget ullamcorper. Aliquam nisl dui, tempor quis
+                                    posuere a, malesuada in velit. Maecenas egestas
+                                    convallis.
+                                </p>
+                                <hr>
+                                <h5 class="author">Por Pedro G.</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-item">
+
+                            <div class="thumb1">
+                                <a href="hp-onepage.html#">
+                                    <img src="img/projects/400x250-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <span class="tag">Software</span>
+                                <a href="hp-onepage.html#">
+                                    <p>24.09.16</p>
+                                    <h3>SQM huehue</h3>
+                                </a>
+                                <p>Proin eu fringilla magna. Aenean semper vel purus
+                                    eget ullamcorper. Aliquam nisl dui, tempor quis
+                                    posuere a, malesuada in velit. Maecenas egestas
+                                    convallis.
+                                </p>
+                                <hr>
+                                <h5 class="author">Por Pedro H.</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-item">
+
+                            <div class="thumb1">
+                                <a href="hp-onepage.html#">
+                                    <img src="img/projects/400x250-3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="article">
+                                <span class="tag">Optimización</span>
+                                <a href="hp-onepage.html#">
+                                    <p>24.09.16</p>
+                                    <h3>superduperoptipro</h3>
+                                </a>
+                                <p>Proin eu fringilla magna. Aenean semper vel purus
+                                    eget ullamcorper. Aliquam nisl dui, tempor quis
+                                    posuere a, malesuada in velit. Maecenas egestas
+                                    convallis.
+                                </p>
+                                <hr>
+                                <h5 class="author">Por Pablo S.</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="c_contact" class="grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                    <h2>Contáctenos</h2>
+                        <h4>Complete el siguiente formulario, lo contáctaremos a la brevedad.</h4>
+                        <form class="contact-form" method="post" action="contact.php">
+                            <div class="input-field col-sm-12">
+                                <div class="form-group">
+                                    <input id="form-name" name="name" type="text" placeholder="Nombre *" required="required"
+                                        data-error="Nombre es obligatorio.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="input-field col-sm-6">
+                                <div class="form-group">
+                                    <input id="form-email" name="email" type="email" placeholder="Email *" required="required"
+                                        data-error="El email es requerido.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="input-field col-sm-6">
+                                <div class="form-group">
+                                    <input id="form-tel" name="tel" type="tel" placeholder="Teléfono" data-error="Por favor, ingrese un número real.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="input-field col-sm-12">
+                                <div class="form-group">
+                                    <textarea id="form-textarea" name="Message" id="" cols="30" rows="5" placeholder="Mensaje *"
+                                        required="required" data-error="el mensaje es requerido."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 center">
+                                <input type="submit" value="Enviar Mensaje">
+                                <div class="messages"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <h5>Dirección</h5>
+                        <p>Providencia 1208, oficina 309, Santiago, Chile.
+                        </p>
+                        <a href="https://goo.gl/xfMdW5">Ver en Google Maps</a>
+                        <hr>
+                        <h5>Teléfono</h5>
+                        <p>(+56) 2 800 283 1232</p>
+                        <hr>
+                        <h5>Email</h5>
+                        <p>contacto@simula.uc.cl</p>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="area blog-social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 hidden-xs">
+                        <h3>Nuestras redes sociales</h3>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 right xs-center">
+                        <div class="social">                                                        
+                            <a href="#"><i class="ion-social-linkedin-outline"></i></a>
+                            <a href="#"><i class="ion-merge"></i></a>
+                            <a href="#"><i class="ion-social-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid no-pad no-max">
+            <div class="col-md-9 mh">
+                <div id="map"></div>
+                <script src="js/googleMap.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGdxJUGVa8uDG4wsQp-cmzQI1ijLNqYb4&callback=initMap"
+                    async defer></script>
+            </div>
+            <div class="col-md-3 col-sm-6 mh center extra-pad primary parallax-container address-hold"
+                data-overlay="9">
+                <div class="parallax"><img src="img/headers/subpage.jpg" alt=""></div>
+                <div class="holder">
+                    <div class="placer">
+                        <h2>Santiago</h2>
+                        <p>Providencia 1208, oficina 309, Santiago, Chile
+                        </p>
+                        <p>(56) 2 2383 123</p>
+                        <a href="hp-onepage.html#" class="btn"><span>Contacto</span></a>
+                    </div>
+                </div>
+            </div>          
+        </div>
+
+        <!-- Footer -->
+        <footer id="smart" class="dark1">
+            <div class="container">
+                <div class="row foot-space">
+                    <div class="col-md-4 col-sm-12">
+                        <img src="img/logo-light.svg" width="100" alt=""><br>
+                        <img src="img/dictuc.png" width="100" alt="">
+                        
+                        
+
+                        <p>Simula UC es una empresa DICTUC, de la Escuela de Ingeniería de la PUC,
+                         dedicada a desarrollar tecnologías de optimización para la industria.
+                        </p>
+                        <div class="social">
+                            <a href="hp-onepage.html#"><i class="ion-social-linkedin-outline"></i></a>                           
+                            <a href="hp-onepage.html#"><i class="ion-social-github"></i></a>
+                            <a href="hp-onepage.html#"><i class="ion-merge"></i></a>                         
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-md-offset-1">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12 spacer">
+                                <h5 class="foot-title">Links de ayuda</h5>
+                                <ul>
+                                    <li><a href="hp-onepage.html#">Nosotros</a></li>
+                                    <li><a href="hp-onepage.html#">Detalles de la Empresa</a></li>
+                                    <li><a href="hp-onepage.html#">Como llegar</a></li>
+                                    <li><a href="hp-onepage.html#">Horario de atención</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 spacer">
+                                <h5 class="foot-title">Empresa</h5>
+                                <ul>
+                                    <li><a href="hp-onepage.html#">Legal</a></li>
+                                    <li><a href="hp-onepage.html#">Política de Cookies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-12 spacer">
+                                <h5 class="foot-title">Soporte</h5>
+                                <ul>
+                                    <li><a href="hp-onepage.html#">Trabaje con nosotros</a></li>
+                                    <li><a href="hp-onepage.html#">FAQ</a></li>                                   
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                    </div>
+                    <div class="col-xs-12 xs-center">
+                        <p class="footer-text">Copyright &copy; Simula UC.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- end of web-in -->
+    <script src="vendor/jquery-2.2.1.min.js"></script>
+    <script src="vendor/matchHeight-min.js"></script>
+    <script src="vendor/contact/validator.js"></script>
+    <script src="vendor/contact/contact.js"></script>
+    <script src="vendor/pace.min.js"></script>
+    <script src="vendor/headroom/headroom.min.js"></script>
+    <script src="vendor/owl-slider/owl.carousel.min.js"></script>
+    <script src="vendor/slideshow/anime.min.js"></script>
+    <script src="vendor/slideshow/imagesloaded.pkgd.min.js"></script>
+    <script src="vendor/slideshow/main.js"></script>
+    <script src="vendor/parallax/materialize.min.js"></script>
+    <script src="vendor/lightbox/lity.min.js"></script>
+    <script src="vendor/tabs/jquery.tabslet.min.js"></script>
+    <script src="vendor/masonry.pkgd.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
